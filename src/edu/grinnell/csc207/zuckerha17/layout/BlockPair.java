@@ -1,5 +1,11 @@
 package edu.grinnell.csc207.zuckerha17.layout;
 
+/**
+ * Creates a pair of side-by-side TextBlocks.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class BlockPair
     implements TextBlock
 {
@@ -10,7 +16,6 @@ public class BlockPair
    * The TextBlock to duplicate. */
   TextBlock text;
 
-
   //+--------------+------------------------------------------------------
   // | Constructors |
   // +--------------+ 
@@ -20,7 +25,7 @@ public class BlockPair
    */
   public BlockPair(TextBlock tb) throws Exception
   {
-        this.text = tb;
+    this.text = tb;
   } // TruncatedBlock(TextBlock, int)
 
   // +---------+-----------------------------------------------------------
@@ -33,7 +38,8 @@ public class BlockPair
   public String row(int i)
     throws Exception
   {
-    StringBuffer output = new StringBuffer(this.text.width()*2);
+    //create new StringBuffer and then fill with both elements next to each other
+    StringBuffer output = new StringBuffer(this.text.width() * 2);
     output.append(this.text.row(i));
     output.append(this.text.row(i));
     return output.toString();
@@ -53,9 +59,9 @@ public class BlockPair
    * Determine how many columns are in the block.
    * @throws Exception 
    */
-  public int width() 
-      throws Exception
+  public int width()
+    throws Exception
   {
     return (this.text.width() * 2);
   } // width()
-} //class CenteredBlock
+} //class BlockPair

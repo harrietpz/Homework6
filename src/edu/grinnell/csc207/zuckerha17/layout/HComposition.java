@@ -85,7 +85,8 @@ public class HComposition
    * Determine how many rows are in the block.
    * @throws Exception 
    */
-  public int height() throws Exception
+  public int height()
+    throws Exception
   {
     // The height is the greater of the heights of the left and right
     // blocks.
@@ -96,7 +97,8 @@ public class HComposition
    * Determine how many columns are in the block.
    * @throws Exception 
    */
-  public int width() throws Exception
+  public int width()
+    throws Exception
   {
     // The number of columns is the width of the left plus the
     // width of the right.

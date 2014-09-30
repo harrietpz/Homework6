@@ -48,7 +48,8 @@ public class TBUtils
    * Print a TextBlock to the specified destination.
    * @throws Exception 
    */
-  public static void print(PrintWriter pen, TextBlock block) throws Exception
+  public static void print(PrintWriter pen, TextBlock block)
+    throws Exception
   {
     for (int i = 0; i < block.height(); i++)
       {

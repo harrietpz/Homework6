@@ -1,11 +1,5 @@
 package edu.grinnell.csc207.zuckerha17.layout;
 
-/**
- * A text block surrounded by a box.
- *
- * @author Samuel A. Rebelsky
- * @version 1.1 of September 2014
- */
 public class BoxedBlock
     implements TextBlock
 {
@@ -67,7 +61,8 @@ public class BoxedBlock
    * Determine how many rows are in the block.
    * @throws Exception 
    */
-  public int height() throws Exception
+  public int height()
+    throws Exception
   {
     return 2 + this.contents.height();
   } // height()
@@ -76,7 +71,8 @@ public class BoxedBlock
    * Determine how many columns are in the block.
    * @throws Exception 
    */
-  public int width() throws Exception
+  public int width()
+    throws Exception
   {
     return 2 + this.contents.width();
   } // width()

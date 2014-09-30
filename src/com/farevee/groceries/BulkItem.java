@@ -1,8 +1,14 @@
 package com.farevee.groceries;
 
+/**
+ * Make a bulk food item.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class BulkItem
 {
-//+--------+------------------------------------------------------------
+  //+--------+------------------------------------------------------------
   // | Fields |
   // +--------+
   /**
@@ -23,9 +29,9 @@ public class BulkItem
    */
   public BulkItem(BulkFood food, Units unit, int amount)
   {
-    this.food= food;
-    this.unit=unit;
-    this.amount=amount;
+    this.food = food;
+    this.unit = unit;
+    this.amount = amount;
   } // BulkItem(BulkFood, Units, int)
 
   // +---------+-----------------------------------------------------------
@@ -33,18 +39,23 @@ public class BulkItem
   // +---------+
   public String toString()
   {
-    StringBuffer output= new StringBuffer();
+    //append the amount and unit and name of object to create the info
+    StringBuffer output = new StringBuffer();
     output.append(this.amount);
+    output.append(this.unit);
     output.append(" of ");
     output.append(this.food);
     return output.toString();
-  }
+  }//toString()
+
   public int getPrice()
   {
-    return this.;
-  }
+    return (this.amount * this.food.pricePerUnit);
+  }//getPrice()
+
   public Weight getWeight()
   {
-    return this.weight;
-  }
-}
+    Weight item = new Weight(this.unit, this.amount);
+    return item;
+  }//getWeight()
+}//class BulkItem

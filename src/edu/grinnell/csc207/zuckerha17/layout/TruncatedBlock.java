@@ -1,5 +1,10 @@
 package edu.grinnell.csc207.zuckerha17.layout;
-
+/**
+ * Creates a truncated text block of the specified width.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class TruncatedBlock
     implements TextBlock
 {

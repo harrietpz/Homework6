@@ -88,7 +88,8 @@ public class VComposition
    * Determine how many rows are in the block.
    * @throws Exception 
    */
-  public int height() throws Exception
+  public int height()
+    throws Exception
   {
     // The height is the sum of the heights of the top and bottom
     // blocks.
@@ -99,7 +100,8 @@ public class VComposition
    * Determine how many columns are in the block.
    * @throws Exception 
    */
-  public int width() throws Exception
+  public int width()
+    throws Exception
   {
     // The width is the greater of the widths of the top and bottom
     // blocks.

@@ -1,5 +1,11 @@
 package edu.grinnell.csc207.zuckerha17.layout;
 
+/**
+ * The vertical composition of two text blocks.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class RightJustified
     implements TextBlock
 {
@@ -27,7 +33,7 @@ public class RightJustified
         this.text = tb;
         this.width = width;
       }
-  } // TruncatedBlock(TextBlock, int)
+  } // RightJustified(TextBlock, int)
 
   // +---------+-----------------------------------------------------------
   // | Methods |
@@ -40,13 +46,13 @@ public class RightJustified
     throws Exception
   {
     int spacing = this.width - this.text.width();
-    //set right and left indent
+    //set spacing after the item
     StringBuffer output = new StringBuffer(this.width);
     for (int count = 0; count < this.width; count++)
       {
         output.append(" ");
-      } //for loop to create indents
-    output.replace(spacing, this.text.width()+spacing, this.text.row(i));
+      } //for loop to create spaces
+    output.replace(spacing, this.text.width() + spacing, this.text.row(i));
     return output.toString();
   } // row(int)
 
@@ -67,4 +73,4 @@ public class RightJustified
   {
     return this.width;
   } // width()
-} //class CenteredBlock
+} //class RightJustified

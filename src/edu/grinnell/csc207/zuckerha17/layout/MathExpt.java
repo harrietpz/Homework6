@@ -22,9 +22,9 @@ public class MathExpt
         pen.println(root + "^2 = " + (root * root));
       } // for i
     // Print some square roots.
-    double thing =3.5;
-    pen.println(MathUtils.squareRoot(new Float (2.3)));
-    pen.println(MathUtils.squareRoot(new Double (2.3)));
+    double thing = 3.5;
+    pen.println(MathUtils.squareRoot(new Float(2.3)));
+    pen.println(MathUtils.squareRoot(new Double(2.3)));
     pen.println(MathUtils.squareRoot(new BigInteger("4")));
     pen.println(MathUtils.squareRoot(new BigDecimal("2.5")));
     pen.println(MathUtils.squareRoot(thing));

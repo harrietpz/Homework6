@@ -1,5 +1,10 @@
 package com.farevee.groceries;
-
+/**
+ * Fields and constructors for the weight of a given item.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class Weight
 {
   // +--------+------------------------------------------------------
@@ -23,5 +28,5 @@ public class Weight
   {
     this.unit=unit;
     this.amount=amount;
-  }
-}
+  }//Weight(Units, int)
+}//class Weight

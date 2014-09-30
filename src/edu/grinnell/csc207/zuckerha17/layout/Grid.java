@@ -1,4 +1,11 @@
 package edu.grinnell.csc207.zuckerha17.layout;
+
+/**
+ * Creates a grid filled with a specified character.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class Grid
     implements TextBlock
 {
@@ -73,4 +80,4 @@ public class Grid
     return output.toString();
   }// row(int)
 
-}
+}//class Grid

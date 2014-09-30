@@ -1,5 +1,10 @@
 package com.farevee.groceries;
-public interface Item
+/**
+ * The item interface.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */public interface Item
 {
 
   // +---------+-----------------------------------------------------------

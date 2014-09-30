@@ -1,5 +1,11 @@
 package edu.grinnell.csc207.zuckerha17.layout;
 
+/**
+ * Creates a TextBlock with centered contents.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class CenteredBlock
     implements TextBlock
 {
@@ -47,7 +53,14 @@ public class CenteredBlock
       {
         output.append(" ");
       } //for loop to create indents
-    output.replace(spacing, this.text.width()+spacing, this.text.row(i));
+    try
+      {
+        output.replace(spacing, this.text.width() + spacing, this.text.row(i));
+      }
+    catch (Exception e)
+      {
+        throw new Exception("Can only update once");
+      }
     return output.toString();
   } // row(int)
 

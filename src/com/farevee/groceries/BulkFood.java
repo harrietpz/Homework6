@@ -1,5 +1,11 @@
 package com.farevee.groceries;
 
+/**
+ * Fields/constructors for bulk food.
+ * 
+ * @author Harriet Zucker
+ * @version 1.1 of September 2014
+ */
 public class BulkFood
 {
   //+--------+------------------------------------------------------------
@@ -31,4 +37,4 @@ public class BulkFood
     this.pricePerUnit = pricePerUnit;
     this.supply = supply;
   } // BulkFood(String, Units, int, int)
-}
+}//class BulkFood
